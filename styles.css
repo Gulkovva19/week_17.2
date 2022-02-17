@@ -26,6 +26,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.comments__input_small{
+    width: 500px;
+    height: 50px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(255, 221, 109);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .comments__button{
     width: 500px;
     height: 30px;
