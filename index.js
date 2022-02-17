@@ -1,4 +1,4 @@
-// если захочу сохранять имя пользователя в инпуте
+// если захочу сохранять имя пользователя
 
 // document.addEventListener("DOMContentLoaded", function (event) {
 //     let name = localStorage.getItem('name');
@@ -9,6 +9,7 @@
 // });
 
 let comments = [];
+
 document.addEventListener("DOMContentLoaded", function (event) {
     loadComments();
 });
@@ -25,9 +26,10 @@ checkSpam.addEventListener("click", () => {
         newmessage = n;
     }
 
-    if (localStorage.getItem('name') == null) {
-        localStorage.setItem('name', author);
-    }
+    // если захочу сохранять имя пользователя
+    // if (localStorage.getItem('name') == null) {
+    //     localStorage.setItem('name', author);
+    // }
 
     let fullcom = {
         name: author,
