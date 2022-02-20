@@ -58,7 +58,9 @@ let showComments = () => {
     let commentslist = document.getElementById('commentslist');
     let out = '';
     comments.forEach(function (item) {
-        out += `<div class="message" id="newmessage">${item.name}:<span>${item.body}</span><button class="comments__button_small" id="btndelete">Удалить</button></div>`
+        out += `<div class="message" id="newmessage">${item.name}:<span>${item.body}</span></div>`
     });
     commentslist.innerHTML = out;
 }
+
+
