@@ -7,15 +7,16 @@
 }
 
 .comments__list {
-    width: 500px;
-    height: 700px;
+    width: 1000px;
+    /* height: 700px; */
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .message {
     display: flex;
-    width: 500px;
+    width: 1000px;
     justify-content: space-between;
     align-items: baseline;
 }
@@ -39,6 +40,7 @@
     width: 500px;
     height: 30px;
     margin-top: 30px;
+    margin-bottom: 70px;
     background-color: rgb(255, 221, 109);
     border: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -51,5 +53,10 @@
     background-color: rgb(255, 221, 109);
     border: none;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo {
+    width: 70px;
+    height: 90px;
 }
 

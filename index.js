@@ -19,6 +19,7 @@ checkSpam.addEventListener("click", () => {
     event.preventDefault();
     let author = document.getElementById("author").value;
     let message = document.getElementById("comments").value;
+    let photo = document.getElementById("photo").value;
     let newmessage = message.toLowerCase();
 
     if (newmessage.includes('xxx') || newmessage.includes('viagra')) {
@@ -33,11 +34,13 @@ checkSpam.addEventListener("click", () => {
 
     let fullcom = {
         name: author,
-        body: newmessage
+        body: newmessage,
+        photo: photo,
     }
 
     author = '';
     newmessage = '';
+    photo = '';
     comments.push(fullcom);
     saveComments();
     showComments();
@@ -58,7 +61,7 @@ let showComments = () => {
     let commentslist = document.getElementById('commentslist');
     let out = '';
     comments.forEach(function (item) {
-        out += `<div class="message" id="newmessage">${item.name}:<span>${item.body}</span></div>`
+        out += `<div class="message" id="newmessage">${item.name}:<span>${item.body}</span><span><img src="${item.photo}" class="photo"></span></div>`
     });
     commentslist.innerHTML = out;
 }
